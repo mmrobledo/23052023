@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>Stardust Eventos</title>
+
+<link rel="stylesheet" href="estilo.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&family=Wix+Madefor+Display&display=swap" rel="stylesheet"> 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+	
+	<div class="nav">
+	
+  <a href="index.html">Home</a> 
+  <a href="salones.html">Salones</a>
+  <a href="servicios.html">Servicios</a>
+  <a href="contacto.html">Contacto</a>
+
+  <div class="search">
+      <input type="text" name="search">
+      <button type="submit"><a href="404.html"><i class="fa fa-search"></button></a></i>
+  </div>
+  
+  </div>
+	  
+  <div class="outer3">
+	  
+  <div class="main2">
+	  
+  <p class="smfs" style="font-size: 30px; position: relative; right: 70px; font-weight: 600">NUESTROS SALONES</p>
+  
+  <hr class="barrita">
+	  
+	<div style="margin-top: -10px; margin-bottom: 10px">
+
+	 <img style="border-radius:10px" name="slide" width="450" height="250" />
+
+	</div>
+	
+	<img class="spark3" src="spark2.png">
+	
+	<div class="sal">
+	  <p>Contamos con 10 salones, cada uno con su propio encanto para justo lo que necesites: <i>bodas, bautismos, comuniones, cumpleaños, egresados, fiestas de 15.. y muchos más!</p>
+	</div>
+
+	</div>	
+	</div>
+	
+		<div class="bg-animation">
+        <div id="stars"></div>
+        <div id="stars2"></div>
+        <div id="stars3"></div>
+        <div id="stars4"></div>
+		</div>
+	
+	<p class="footer">Stardust Eventos © Todos los derechos reservados 2023</p>
+
+</body>
+
+  <script>
+var i = 0; 			// Start Point
+var images = [];	// Images Array
+var time = 3000;	// Time Between Switch
+	 
+// Image List
+images[0] = "salon1.png";
+images[1] = "salon2.png";
+images[2] = "salon3.png";
+images[3] = "salon4.png";
+images[4] = "salon5.png";
+images[5] = "salon6.png";
+images[6] = "salon7.png";
+images[7] = "salon8.png";
+images[8] = "salon9.png";
+images[9] = "salon10.png";
+
+
+// Change Image
+function changeImg(){
+	document.slide.src = images[i];
+
+	// Check If Index Is Under Max
+	if(i < images.length - 1){
+	  // Add 1 to Index
+	  i++; 
+	} else { 
+		// Reset Back To O
+		i = 0;
+	}
+
+	// Run function every x seconds
+	setTimeout("changeImg()", time);
+}
+
+// Run function when page loads
+window.onload=changeImg;
+
+</script>
+
+</html>
