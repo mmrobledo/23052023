@@ -150,8 +150,8 @@ top: 500px;
 position: absolute;
 width: 80px; 
 z-index: 2;
-left: 430px;
-top: 506px;
+left: 435px;
+top: 525px;
 
 }
 
@@ -452,7 +452,7 @@ padding: 5px 15px 5px 15px;
 .barrita {
 position:absolute; 
 border: solid white 4px;
-top: 164px;
+top: 177px;
 right: 392px;
 width: 120px
 }
